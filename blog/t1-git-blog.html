@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<head>
-  <title>Your page title here</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
-</head>
-
-<main>
-  <h1>Version Control </h1>
-  <h2>Git and Github</h2>
-  <h4>1/4/15</h4>
-
-  <section>
-    <p> 
-       Version control is a system of tracking changes made to files over the span of a project. This is accomplished by taking "snapshots" everytime something is editted in a file. If at any point in time I make a mistake and would like to go back, i can easily do this with and start right before the point i made the mistake. I haven't worked in a team setting before but i can imagine how important it is for all members to have a solid understanding of version control to ensure that all the code is functional and everyone is synchronized.   
-    </p>
-    <p>
-       Git is a distributed version control that runs on your local machine. Git has three main states that files fall in: committed,modified and staged. Committed means that you have made your changes to the file and it is saved in your local repo and ready to pushed to the master. Modified means a files is changed but not committed to your repos yet. Staged means that you have made your changes and that file is ready for your next commit. You can then view your commmit history by using the git log command.
-    </p>
-    <p>
-      Github is a collaborative platform where you can store your code online. It is an extension of git and allows users to access there there code remotely from anywhere. Each user creates a user profile which displays contact information,showcases your work and all the others you've contributed to. Because of the social network aspect, it makes it easier for users to contribute their skills and expertise to move projects forward. 
-    </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nikolai Calder | Web designer</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>Nikolai Calder</h1>
+        <h2>Web Designer</h2>
+      </a>  
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <article id ="gallery">
+          <h1 >Version Control</h1>
+            <p> 
+             Version control is a system of tracking changes made to files over the span of a project. This is accomplished by taking "snapshots" everytime something is editted in a file. If at any point in time I make a mistake and would like to go back, i can easily do this with and start right before the point i made the mistake. I haven't worked in a team setting before but i can imagine how important it is for all members to have a solid understanding of version control to ensure that all the code is functional and everyone is synchronized.   
+          </p>
+          <p>
+             Git is a distributed version control that runs on your local machine. Git has three main states that files fall in: committed,modified and staged. Committed means that you have made your changes to the file and it is saved in your local repo and ready to pushed to the master. Modified means a files is changed but not committed to your repos yet. Staged means that you have made your changes and that file is ready for your next commit. You can then view your commmit history by using the git log command.
+          </p>
+          <p>
+            Github is a collaborative platform where you can store your code online. It is an extension of git and allows users to access there there code remotely from anywhere. Each user creates a user profile which displays contact information,showcases your work and all the others you've contributed to. Because of the social network aspect, it makes it easier for users to contribute their skills and expertise to move projects forward. 
+          </p>
+        </article>
+      </section>  
+        <footer>
+        <a href = "http://twitter.com/nikocal17"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href = "http://facebook.com/niko.calder"><img src="../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 Nikolai Calder</p>
+        </footer>
+      </div>
+  </body>
+  </html>
