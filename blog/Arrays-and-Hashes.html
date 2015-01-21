@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nikolai Calder | Web designer</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>Nikolai Calder</h1>
+        <h2>Web Designer</h2>
+      </a>  
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <article id ="gallery">
+          <h3> Hashes and Arrays </h3>
+
+          <p><strong>What is an array ?</strong></p>
+            <p>
+               An array is a data structure that is essentially just an ordered list that can be used to store data of any type. What this means is that i can store integers, floats, strings, booleans and even other arrays. Ruby being such a flexible language alows you to define an array several ways here are few examples.
+               <pre >
+
+arr = ["hello", 1, 9.0, nil, true]
+new_arr = %w[the cow jumped over the moon]
+other_arr = []
+               </pre>
+              <p><strong>Accessing elements</strong></p>
+              <p>
+                Each object that is stored in an array is called an element. An array is indexed which means each element is stored a specific number. To access the elelment you type the array name plus the number between []. It is important to note that arrays indices start with 0, here is an example.
+                <pre>
+
+arr = [1, 2, 3, 4, 5]
+arr[0] #> 1
+arr[4] #> 5
+arr[2] #> 3
+                </pre>
+              </p>
+              <P> <strong>Useful built in methods </strong></P> 
+            <p>
+               Apart from creating and adding elements to an array . Ruby has a vast selection of powerful methods that can manipulate the data in arrays. Note that some methods permanently change the initial array that it is called upon while some don't, in order to know the methods that don't permanently change the array, the best method is to just experiment in irb.
+            <pre >
+arr = [how, to, read, a, book]
+arr.pop #> "book" // removes the last elemennt of the array indices 
+arr.delete("a") // removes all instances of the element provided
+arr << "a" // adds the string a back to the array
+array.push("book") // adds the string book to the array
+            </pre>
+
+            </p>
+            <p> <strong>What is a hash ?</strong></p>
+            <p>
+              A hash is a data-structure that stores items in a collection of key-value pairs. The difference between the two is that unlike arrays that store items through an ordered index, hashes allows you to use any object type. All key-value pairs in a hash are surrounded by curly braces {} and comma separated. Here is  a simple way to create a hash using symbols as keyswith multiple key value pairs
+              <pre>
+ fruits_color = { orange: "orange" , grape: "purple" , banana: "yellow" , apple: red}              
+         
+              </pre>
+
+            </p>
+
+            <p><strong>Adding, deleting and retrieving data</strong> </p>
+            <pre>
+fruit_color[:pear] = green // adds new key value pair to hash
+fruit_color.delete[:orange] // removes the key value pair of (orange: "orange")
+fruit_color[:apple] // outputs the value ok key :apple
+            </pre>
+            <p>
+              To sum it up, hashes and arrays are two powerful data structures that can be usesd to model data in either an index or associative pattern. As you grow as a developer and with more practice you will know which one to apply to solve the problem at hand.
+
+            </p>
+
+        </article>
+      </section>  
+        <footer>
+        <a href = "http://twitter.com/nikocal17"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href = "http://facebook.com/niko.calder"><img src="../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 Nikolai Calder</p>
+        </footer>
+      </div>
+  </body>
+  </html

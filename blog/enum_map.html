@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nikolai Calder | Web designer</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>Nikolai Calder</h1>
+        <h2>Web Designer</h2>
+      </a>  
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <article id ="gallery">
+          <h3>  </h3>
+
+          <p><strong> Enumerable#map</strong></p>
+            <p>
+              Enumerables are a basically packaged up methods that are mixed in with classes that implement their own each method.The Enumerable module provides a set of methods to traverse, search, sort and manipulate collections. In this post we will look at the enumerable method map which is mixed in with Array and Hashes classes.But first lets look at each to understand the difference.
+               <pre >
+[1, 2, 3, 4, 5].each { |element| puts element + 1 } 
+3
+4
+5
+6
+=> [1, 2, 3, 4]
+
+               </pre>
+              <p> As you can see above each iterates through the array and passes the block on each value but at the end it discards the changes and returns
+              the original array. </p>
+                <pre>
+[1, 2, 3, 4, 5,].map {|element| element ** 2 }
+
+=> [1, 4, 9, 16, 25]
+
+                </pre>
+            <p> However, as seen above like the each  when given a block it invokes the given block once for each element in the array. The difference is that map creates a new array with the values returned from the block. So to sum up each and map are two iterators that both traverse a collection of objects. But the key difference to remember is each always returns the original while map transforms the collection.</p>
+      
+        </article>
+      </section>  
+        <footer>
+        <a href = "http://twitter.com/nikocal17"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href = "http://facebook.com/niko.calder"><img src="../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 Nikolai Calder</p>
+        </footer>
+      </div>
+  </body>
+  </html
