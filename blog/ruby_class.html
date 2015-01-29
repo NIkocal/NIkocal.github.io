@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nikolai Calder | Web designer</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>Nikolai Calder</h1>
+        <h2>Web Designer</h2>
+      </a>  
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <article id ="gallery">
+          <h3>  </h3>
+
+          <p><strong> Ruby Classes</strong></p>
+            <p>
+             Ruby is an object-oriented programming languge which means it manipulates constructs called objects. All of these objects belong to particular classes that define their state and behaviour. The state keeps track of the attributes of objects and behaviors are what objects are capable of doing. Classes allow you to create a blueprint for your objects with uniqe states but similar behaviour. Ruby has built in class but lets create our own player class.
+             <pre>
+class Person
+end
+
+p = Player.new
+            </pre>
+            <p><strong> Initializaton and Instance variables</strong></p>
+              <p> This is the most basic way to define a class in Ruby but we haven't but our object is empty. it has no state or behavior . We will define an initialize method that will create each instance with a unique state. Inside the initialize method we store the object's state in instance variables. the values assigned to those instance variables are unique to each object. Instance variables start with an @ sign. Unlike other variables that disappear at the end of an object these will
+                <pre>
+class Person
+
+  def initialize(name, age)
+    @name = name.capitalize
+    @age = age
+  end
+
+end
+ 
+ p = Person.new("Steve", 35)
+
+
+                </pre>
+             <p><strong> Instance methods</strong></p>
+             <p>Now that we have a class and instance variables to hold the state. We can create methods that operate on an objects state. To do this we will define the method within the class and it will be shared by all objects of the Person class.</p>
+      <pre>
+class Person
+
+  def initialize(name, age)
+    @name = name.capitalize
+    @age = age
+  end
+  
+  def greeting
+    puts "I'm #{@name} and i am #{@age} years old"  
+  end
+end 
+
+p = Person.new("Steve", 35)
+n = Person.new("John", 40)
+n.greeting => I'm John and i am 40 years old
+p.greeting => I'm Steve and i am 35 years old
+</pre>
+<p><strong> Wrap up</strong></p>
+<p> A whole book can be written on this topic but this is just a quick intro in to creating a simple template for objects,some points to keep in mind are that classes allow you to reduce duplicity in your code and makes it easier to make changes to the program without having to start from scratch.
+
+
+
+</p>
+        </article>
+      </section>  
+        <footer>
+        <a href = "http://twitter.com/nikocal17"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href = "http://facebook.com/niko.calder"><img src="../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 Nikolai Calder</p>
+        </footer>
+      </div>
+  </body>
+  </html
