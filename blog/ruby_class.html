@@ -31,7 +31,7 @@
             <p>
              Ruby is an object-oriented programming languge which means it manipulates constructs called objects. All of these objects belong to particular classes that define their state and behaviour. The state keeps track of the attributes of objects and behaviors are what objects are capable of doing. Classes allow you to create a blueprint for your objects with uniqe states but similar behaviour. Ruby has built in class but lets create our own player class.
              <pre>
-class Person
+class Player
 end
 
 p = Player.new
@@ -39,7 +39,7 @@ p = Player.new
             <p><strong> Initializaton and Instance variables</strong></p>
               <p> This is the most basic way to define a class in Ruby but we haven't but our object is empty. it has no state or behavior . We will define an initialize method that will create each instance with a unique state. Inside the initialize method we store the object's state in instance variables. the values assigned to those instance variables are unique to each object. Instance variables start with an @ sign. Unlike other variables that disappear at the end of an object these will
                 <pre>
-class Person
+class Player
 
   def initialize(name, age)
     @name = name.capitalize
@@ -48,14 +48,14 @@ class Person
 
 end
  
- p = Person.new("Steve", 35)
+ p = Player.new("Steve", 35)
 
 
                 </pre>
              <p><strong> Instance methods</strong></p>
              <p>Now that we have a class and instance variables to hold the state. We can create methods that operate on an objects state. To do this we will define the method within the class and it will be shared by all objects of the Person class.</p>
       <pre>
-class Person
+class Player
 
   def initialize(name, age)
     @name = name.capitalize
@@ -67,8 +67,8 @@ class Person
   end
 end 
 
-p = Person.new("Steve", 35)
-n = Person.new("John", 40)
+p = Player.new("Steve", 35)
+n = Player.new("John", 40)
 n.greeting => I'm John and i am 40 years old
 p.greeting => I'm Steve and i am 35 years old
 </pre>
