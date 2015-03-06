@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nikolai Calder | Web designer</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>Nikolai Calder</h1>
+        <h2>Web Designer</h2>
+      </a>  
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <article id ="">
+          <h3>  </h3>
+
+          <p><strong> Variable Scope</strong></p>
+            <p>
+            So lets jump right into it when writing and organizing your code, you will have to put some thought into which variables are accessible in particular locations of your program, this is where scoping comes in. Scoping is a term which  defines whether your variable is accessible or not. If done properly you will avoid alot of errors and your code will run as expected . It will also prevent you from namespacing issues and also  other methods from accessing or modifying your variables, unless specified .Here are the different variables and their scope that you will find in Ruby : local variable, instance variable, class variable, global variable and constant.
+            </p>
+             <pre>
+  $global = 4 
+  PI = 3.14
+module Module 
+    x, y = 1
+    puts "Inside module"
+    puts local_variables           
+    $global
+    PI
+end
+
+
+def method
+    x, y = 1
+    puts "Inside method"
+    puts local_variables 
+    $global
+    PI
+end
+
+
+class Demo
+    x, y = 1
+    puts "Inside class"
+    puts local_variables
+    $global
+    PI 
+end 
+
+method
+
+x, y = 1
+  $global
+  PI 
+puts "Inside toplevel"
+puts local_variables   
+             </pre>
+          <p> The output demonstrates each local variables local scope. While also that constant and global variables can be accessed anywhere</p>
+                <pre>
+Inside module
+x 
+y
+4
+3.14
+
+Inside class
+x
+y
+4
+3.14
+
+Inside method
+x
+y
+4
+3.14
+
+Inside toplevel
+x
+y
+4
+3.14
+                </pre>
+             <p><strong> Instance Variables and Class Variables </strong></p>
+             <p>Class variables are variables that are shared across all instances of a class and are prepended by tow @@ signs . Instance variables has a name beginning with only one @ sign. They are used to store the state of an object and are only visible to the object in which they belong to. Here is a small example of both in action.</p>
+      <pre>
+
+class Protein
+  @@yummy = true
+    attr_accessor :name 
+    def initialize(name)
+    @name = name
+    end
+    
+    def yummy?
+    @@yummy = true
+    end
+end
+
+c = Protein.new("Jerk-chicken")
+f = Protein.new("Snapper")
+p c.name =>  "Jerl-chicken"
+p f.name  => "Snapper"
+p c.yummy? => "true"
+p f.yummy? => "true"
+</pre>
+        </article>
+      </section>  
+        <footer>
+        <a href = "http://twitter.com/nikocal17"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href = "http://facebook.com/niko.calder"><img src="../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 Nikolai Calder</p>
+        </footer>
+      </div>
+  </body>
+  </html

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nikolai Calder | Web designer</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>Nikolai Calder</h1>
+        <h2>Web Designer</h2>
+      </a>  
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <article id ="gallery">
+          <p>Looping in Javascript and Ruby</p>
+          <p>I've spent a couple months learning Ruby but now i am focusing on getting comfortable with Javascript, which  is not as hard to learn becasue it will be my second language. In this post i will demonstrate how to use a for loop through 1-100 in both Ruby and Javascript. To make it fun i will demonstrate the FizzBuzz problem in both languages. I will being with the Javascript axample first.  </p>
+             <pre>  
+
+for (var i=1; i <= 20; i++)
+{
+    if (i % 15 == 0)
+        console.log("FizzBuzz");
+    else if (i % 3 == 0)
+        console.log("Fizz");
+    else if (i % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(i);
+}
+
+             </pre>
+          <p>Here is the same problem in Ruby</p>  
+          <pre>
+            
+            
+    1.upto(100) do |i|
+      if i % 5 == 0 and i % 3 == 0
+        puts "FizzBuzz"
+      elsif i % 5 == 0
+        puts "Buzz"
+      elsif i % 3 == 0
+        puts "Fizz"
+      else
+        puts i
+      end
+    end
+          </pre>
+        </article>
+      </section>  
+        <footer>
+        <a href = "http://twitter.com/nikocal17"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href = "http://facebook.com/niko.calder"><img src="../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 Nikolai Calder</p>
+        </footer>
+      </div>
+  </body>
+  </html>
